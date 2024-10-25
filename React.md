@@ -26,12 +26,33 @@
     
       npm run start
     
-    
-    
   ### Step 4: Build the Project for Production
     npm run build
 
- ### Step 5: Hosting in Github pages
-  search for ``create react app`` follow the steps
+
+
+
+ # Step 5: Hosting in Github pages
+  Google ``create react app`` follow the steps
+
+  
+### Step 1: Add homepage to package.json
+    "homepage": "https://myusername.github.io/my-app",
+
+Step 2: Install gh-pages and add deploy to scripts in package.json
+
+    npm install --save gh-pages
+    
+Add the following scripts in your package.json:
+
+
+      "predeploy": "npm run build",
+       "deploy": "gh-pages -d build",
+
+### Step 3: Deploy the site by running npm run deploy 
+  
+         npm run deploy
+  
+
 
 
